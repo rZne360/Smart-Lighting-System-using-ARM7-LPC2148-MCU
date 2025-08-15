@@ -2,8 +2,6 @@
 
 This repository contains a complete, GitHub-ready version of the **Smart Lighting System** built on an **ARM7 LPC2148** microcontroller. It turns a light (LED) and buzzer **ON** when a person is detected within a threshold distance, and **OFF** otherwise—using an **HC-SR04 ultrasonic sensor**.
 
-> Source: Converted and organized from the uploaded project report (see [`docs/Project_Report.pdf`](docs/Project_Report.pdf)).
-
 ---
 
 ## Repository Structure
@@ -11,14 +9,14 @@ This repository contains a complete, GitHub-ready version of the **Smart Lightin
 ```
 lpc2148-arm7-smart-lighting/
 ├─ src/                 # Embedded C source code
-├─ inc/                 # (Place header files here if you add any)
+├─ inc/                 
 ├─ projects/
-│  ├─ keil/             # Keil µVision (placeholder folder for your .uvproj/.uvopt if any)
-│  └─ gcc/              # Minimal GCC Makefile for arm-none-eabi
+│  ├─ keil/             
+│  └─ gcc/              
 ├─ docs/
-│  ├─ assets/           # Images extracted from the PDF + LPC2148 illustration
+│  ├─ assets/           
 │  └─ Project_Report.pdf
-├─ .github/workflows/   # (Reserved for CI; add as needed)
+├─ .github/workflows/   
 ├─ .gitignore
 ├─ LICENSE (MIT)
 └─ README.md
@@ -29,7 +27,6 @@ Included images:
 - docs/assets/pdfimg_p0_i0.png
 - docs/assets/pdfimg_p1_i0.png
 - docs/assets/pdfimg_p4_i0.png
-- docs/assets/pdfimg_p4_i1.png
 - docs/assets/pdfimg_p9_i0.png
 
 ---
