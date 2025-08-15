@@ -24,8 +24,6 @@ lpc2148-arm7-smart-lighting/
 
 Included images:
 - `docs/assets/lpc2148_illustration.png` – an illustrative image of an **ARM7 LPC2148** microcontroller on a dev board (for README usage).
-- docs/assets/pdfimg_p0_i0.png
-- docs/assets/pdfimg_p1_i0.png
 - docs/assets/pdfimg_p4_i0.png
 - docs/assets/pdfimg_p9_i0.png
 
@@ -89,7 +87,7 @@ IO0DIR |= (1<<9);       // Buzzer: P0.9 output
 
 ## Building & Flashing
 
-### Option A: Keil µVision (recommended if that's what you used)
+###  Keil µVision (recommended if that's what you used)
 1. Create a new LPC2148 project in Keil µVision.
 2. Add `src/main.c` to the target.
 3. Configure clock (12 MHz typical) and startup files as per your board.
@@ -98,16 +96,6 @@ IO0DIR |= (1<<9);       // Buzzer: P0.9 output
    - Boot into ISP (P0.14 low at reset on many boards).
    - Select correct COM port and device (LPC2148).
    - Program the generated hex file.
-
-### Option B: GCC (arm-none-eabi)
-1. Install the toolchain: `arm-none-eabi-gcc` and friends.
-2. Navigate to `projects/gcc` and run:
-   ```bash
-   make
-   ```
-3. This produces `smart_lighting.bin`. You can adapt a linker script/startup as needed for a full bare‑metal setup.
-
-> **Note:** The provided Makefile is minimal and meant as a starting point. For a production bare‑metal GCC build you will want proper startup code, linker script, and vendor headers.
 
 ---
 
@@ -122,15 +110,6 @@ IO0DIR |= (1<<9);       // Buzzer: P0.9 output
 
 ---
 
-## Credits & Authors
-
-- **Niranjan Patil (2GI22EC083)**  
-- **Nishanth S (2GI22EC084)**  
-- **Om Ganada (2GI22EC085)**  
-
-Converted to a structured GitHub repo by an assistant tool, preserving the original intent and content.
-
----
 
 ## License
 
