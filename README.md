@@ -9,10 +9,7 @@ This repository contains a complete, GitHub-ready version of the **Smart Lightin
 ```
 lpc2148-arm7-smart-lighting/
 ├─ src/                 # Embedded C source code
-├─ inc/                 
-├─ projects/
-│  ├─ keil/             
-│  └─ gcc/              
+├─ inc/                              
 ├─ docs/
 │  ├─ assets/           
 │  └─ Project_Report.pdf
